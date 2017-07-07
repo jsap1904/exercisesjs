@@ -32,6 +32,14 @@ var years = [1980, 1985, 1990, 1995, 2000, 2017]
 var ages = []
 var fullAges = []
 
-for(var i = 0; i > years.length; i++) {
+for(var i = 0; i < years.length; i++) {
 	ages[i] = 2017 - years[i];
+}
+for (i=0; i < ages.length; i++) {
+
+if (ages[i] >= 18) {
+	console.log ("person " + (i + 1)  + " is full age");
+} else {
+	console.log ("person " + (i + 1) + " is not old enough");
+	}
 }
